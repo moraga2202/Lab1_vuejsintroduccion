@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SEMANA I</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+   
+
+    <!-- Load Vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+    </script>
+    </script>
+</head>
+  <!--PASO 3-->
+<body>
+  <br>
+  <center><b><h3 style="color: rgb(206, 25, 25) ; ">Laboratorio 1</h3></center></b>
+   <div class="container"><br>
+       <center><b><h3 style="color: rgb(6, 60, 160) ; ">Datos académicos</h3></center></b>
+        <div class="row">
+           
+              
+                 <table class="table table-info" style="color: rgb(212, 32, 32) ; ">
+                 <tr>
+                    <td>Nombre: Kevin Adonys Moraga Martinez </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Carrera: Ingenieria en sistemas </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ciclo: V</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Dirección: San Miguel </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Teléfono: 7247___ </td>
+                    <td></td>
+                </tr>
+
+                
+              
+            </table>
+        </div>
+    </div>
+
+</body>
+<hr>
+<hr>
+
+<!--PASO 4-->
+<center>
+
+    <div class="container">
+    <div style="text-align: center  center;width: 600px;">
+       <center> <h3 style="color: rgb(6, 60, 160) ; ">
+                    Nombres de los integrantes
+        </h3>
+       
+   </div>
+  
+   <div v-html="message"  id="app"> </div>
+     
+       <script>
+          var app = new Vue({
+             el: '#app',
+            data: {
+            message:  '<h2> <center> Kevin Adonys Moraga Martinez  '
+            }
+        })
+        </script></center>
+    <hr>
+    <hr>
+
+    <!--PASO 5-->  
+
+    <center>
+    <div id="root">
+        <center><b><h3 style="color: rgb(6, 60, 160) ; ">Datos de Mascotas</h3></center></b>
+         <p v-html="paso5">
+
+         </p> <ul> 
+             <li v-for="item in mascotas" v-text="item"></li>
+             </ul>
+             </div>
+             
+              <script> var e= new Vue({ el:'#root', 
+                data:{  mascotas: ['Nombre: Ranger',' Edad: 7 meses','Nombre: Boby',' Edad: 4 meses'], }, }); </script>
+    </center>
+    
+</html>
